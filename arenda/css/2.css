@@ -1,0 +1,374 @@
+﻿@font-face {
+  font-family: 'Museo Sans 100';
+  src: url("../fonts/MuseoSansCyrl.otf") format("opentype");
+}
+@font-face {
+  font-family: 'Museo Sans 300';
+  src: url("../fonts/MuseoSansCyrl_0.otf") format("opentype");
+}
+@font-face {
+  font-family: 'Museo Sans 500';
+  src: url("../fonts/MuseoSansCyrl_1.otf") format("opentype");
+}
+@font-face {
+  font-family: 'Museo Sans 700';
+  src: url("../fonts/MuseoSansCyrl_2.otf") format("opentype");
+}
+@font-face {
+  font-family: 'Museo Sans 900';
+  src: url("../fonts/MuseoSansCyrl_3.otf") format("opentype");
+}
+
+.justify {
+  text-align: justify;
+}
+.center {
+  text-align: center;
+}
+p {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+  font-size:14pt;
+}
+li {
+font-size:14pt;
+}
+.tx {
+font-style:italic;
+}
+
+.blue {
+  color: #0055A6;
+}
+.underline {
+  text-decoration: underline;
+}
+
+.Museo_Sans_100 {
+  font-family: "Museo Sans 100",Geneva,Arial,Verdana,sans-serif;
+}
+.Museo_Sans_300, * {
+  font-family: "Museo Sans 300",Geneva,Arial,Verdana,sans-serif;
+}
+.Museo_Sans_500 {
+  font-family: "Museo Sans 500",Geneva,Arial,Verdana,sans-serif;
+}
+.Museo_Sans_700 {
+  font-family: "Museo Sans 700",Geneva,Arial,Verdana,sans-serif;
+}
+
+
+.outline {
+    border: 2px groove green;
+padding:10px 10px;
+list-style-type: square;
+}
+body {
+  margin: 0 auto;
+  max-width: 1200px;
+  background:#d6d2d262;;
+}
+
+/* Шапка */
+header {
+  height: 120px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+}
+header > div:first-child {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+header #logo_box {
+  height: 100%;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative
+}
+header #logo_box > img {
+  max-height: calc(100% - 10px);
+  max-width: calc(100% - 10px);
+}
+header > div:first-child > div:nth-child(1) {
+  margin-right: 10px;
+}
+header > div:first-child > div:nth-child(2) > div:nth-child(1) {
+  font-size: 34pt;
+  font-family: "Museo Sans 500",Geneva,Arial,Verdana,sans-serif;
+}
+header > div:first-child > div:nth-child(2) > div:nth-child(2) {
+  font-size: 16pt;
+  font-style: italic;
+  font-family: "Museo Sans 100",Geneva,Arial,Verdana,sans-serif;
+}
+header > div:last-child > div:first-child {
+  margin-bottom: 10px;
+}
+
+/* Меню */
+menu {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  background: #2351ce;
+}
+menu > ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+menu > ul > li > a {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  display: block;
+}
+menu > ul > li > a:hover {
+  background: #34aace;
+}
+
+/* Подвал */
+footer {
+  background: #034eee;
+  padding: 10px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+/* Содержимое сайта */
+#content {
+  min-height: 300px;
+  padding: 5px;
+}
+
+.page_header {
+  font-size: 16pt;
+  font-family: "Museo Sans 500",Geneva,Arial,Verdana,sans-serif;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid black;
+}
+
+.two_cols {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.two_cols > div {
+  width: 48%;
+}
+.col_header {
+  font-size: 14pt;
+  font-family: "Museo Sans 500",Geneva,Arial,Verdana,sans-serif;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+/*
+.news_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.news_box > .news_img {
+  position: relative;
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 10px;
+  margin-bottom: 20px;
+}
+.news_box > .news_text {
+  flex-grow: 1;
+  padding: 5px;
+}
+.news_box > .news_img > img {
+  max-height: calc(100% - 10px);
+  max-width: calc(100% - 10px);
+}*/
+.news_conteiner {
+  margin-bottom: 10px;
+}
+.news_text {
+  flex-grow: 1;
+  padding: 5px 0;
+}
+.news_header {
+  font-size: 16pt;
+  font-family: "Museo Sans 500",Geneva,Arial,Verdana,sans-serif;
+  text-align: left;
+  margin-bottom: 5px;
+}
+.news_header a {
+  text-decoration: none;
+  color: #0055A6;
+}
+.news_header a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.news_info {
+  text-align: left;
+  padding: 5px 0;
+  color: #808080;  
+  margin-bottom: 5px;
+  font-size: 10pt;
+}
+
+
+/* Форма */
+.form {
+  max-width: 500px;
+}
+.form > div {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.form > div > label {
+  margin-right: 5px;
+  color: #404040; 
+  font-size: 11pt;
+}
+.form > div > input, .form > div > textarea, .form > div > select {
+  padding: 5px;
+  width: 100%;
+}
+.form > div > textarea {
+  min-height: 6em;
+}
+.form > div > input[type="submit"] {
+  background: #ff0000;
+  color: black;
+  padding: 5px 10px;
+  border: none;
+}
+.form > div > input[type="submit"]:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.table {
+  text-align: center;
+  border-spacing: 0;
+  width: 100%;
+  font-size:14pt;
+}
+.table td, .table th {
+  padding: 5px;
+  border: 1px solid black;
+  border-right: none;
+  border-bottom: none;
+}
+.table th {
+  border-bottom: 1px solid black;
+}
+.table td:last-child, .table th:last-child {
+  padding: 5px;
+  border-right: 1px solid black;
+}
+.table tr:last-child td {
+  padding: 5px;
+  border-bottom: 1px solid black;
+}
+.table tr:nth-child(2) td {
+  padding: 5px;
+  border-top: none;
+}
+
+
+
+@media only screen and (max-width: 860px) {
+  header > div:first-child > div:nth-child(2) > div:nth-child(1) {
+    font-size: 26pt;
+    font-family: "Museo Sans 500",Geneva,Arial,Verdana,sans-serif;
+  }
+  header > div:first-child > div:nth-child(2) > div:nth-child(2) {
+    font-size: 12pt;
+    font-style: italic;
+    font-family: "Museo Sans 100",Geneva,Arial,Verdana,sans-serif;
+  }
+  header {
+    height: 80px;
+  }
+  header #logo_box {
+    height: 100%;
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative
+  }
+  header #logo_box > img {
+    max-height: calc(100% - 10px);
+    max-width: calc(100% - 10px);
+  }
+  menu {
+    display: block;
+  }
+  .two_cols {
+    flex-direction: column;
+  }
+
+  .two_cols > div {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  header > div:first-child > div:nth-child(2) > div:nth-child(1) {
+    font-size: 20pt;
+    font-family: "Museo Sans 500",Geneva,Arial,Verdana,sans-serif;
+  }
+  header > div:first-child > div:nth-child(2) > div:nth-child(2) {
+    font-size: 10pt;
+    font-style: italic;
+    font-family: "Museo Sans 100",Geneva,Arial,Verdana,sans-serif;
+  }
+  header {
+    height: 60px;
+  }
+  header #logo_box {
+    height: 100%;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative
+  }
+  header #logo_box > img {
+    max-height: calc(100% - 10px);
+    max-width: calc(100% - 10px);
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  header {
+    display: block;
+    height: auto;
+  }
+  header > div:last-child {
+    display: flex; 
+    justify-content: space-between;
+    margin-top: 5px;
+  }
+  header > div:last-child > div:first-child {
+    margin-bottom: 0;
+  }
+}
